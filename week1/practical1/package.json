@@ -1,0 +1,15 @@
+{
+  "name": "pactical-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "express": "^4.19.2"
+  }
+}
