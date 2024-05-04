@@ -58,7 +58,7 @@ const deleteBook = async (req, res) => {
     const bookId = parseInt(req.params.id);
 
     try {
-        const succcess = await Book.deleteBook(bookId);
+        const success = await Book.deleteBook(bookId);
         if (!success) {
             return res.status(404).send("Book not found");
         }
