@@ -30,17 +30,17 @@ app.put("/books/:id", validateBook, booksController.updateBook);
 // DELETE for deleting books
 app.delete("/books/:id", booksController.deleteBook);
 
+app.get("/users/with-books", usersController.getUsersWithBooks); // Get users with books
 
 // Search users
 app.get("/users/search", usersController.searchUsers);
+
 // User routes
 app.post("/users", usersController.createUser); // Create user
 app.get("/users", usersController.getAllUsers); // Get all users
 app.get("/users/:id", usersController.getUserById); // Get user by ID
 app.put("/users/:id", usersController.updateUser); // Update user
 app.delete("/users/:id", usersController.deleteUser); // Delete user
-
-app.get("/users/with-books", usersController.getUsersWithBooks);
 
 
 app.listen(port, async() => {
